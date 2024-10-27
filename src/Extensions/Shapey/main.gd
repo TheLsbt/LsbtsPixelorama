@@ -1,12 +1,31 @@
 extends Node2D
 
 
+var shapey_button: Button = null
+
+
 func _enter_tree() -> void:
+	shapey_button = Button.new()
+	shapey_button.text = "Shapey"
+
+	var top_menu_container = Global.control.find_child("TopMenuContainer")
+	var hbox: HBoxContainer = top_menu_container.get_node("MarginContainer/HBoxContainer")
+
+	top_menu_container.add_child(shapey_button)
+
+
 	Global.cel_switched.connect(
 		func(): print("Imprinted image")
 	)
 	var scene = preload("res://src/Extensions/Rooted/scenes/main_panel.tscn").instantiate()
 	Global.control.find_child("UI").add_child(scene)
+
+
+
+
+func _exit_tree() -> void:
+	if shapey_button:
+		shapey_button.queue_free()
 
 
 

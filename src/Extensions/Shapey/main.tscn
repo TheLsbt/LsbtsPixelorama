@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bht1of6yisn4"]
 
-[ext_resource type="Script" path="res://src/Extensions/Rooted/main.gd" id="1_rc77i"]
+[ext_resource type="Script" path="res://src/Extensions/Shapey/main.gd" id="1_rc77i"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_rc77i")
