@@ -168,6 +168,10 @@ func _init() -> void:
 
 
 func _ready() -> void:
+	# TODO: Shit code for lsbt
+	get_node("Extensions")._load_extension("Rooted")
+	#ExtensionsApi.general.get_extensions_node()._load_extension("Rooted")
+
 	get_tree().set_auto_accept_quit(false)
 
 	get_window().title = tr("untitled") + " - Pixelorama " + Global.current_version

@@ -1,0 +1,12 @@
+{
+	"name": "Rooted",
+	"display_name": "Rooted",
+	"description": "Create images using nodes",
+	"author": "lsbt",
+	"version": "0.1",
+	"supported_api_versions": [4],
+	"license": "MIT",
+	"nodes": [
+		"main.tscn"
+	]
+}
