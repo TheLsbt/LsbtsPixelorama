@@ -3,7 +3,7 @@
 	"display_name": "Shapey",
 	"description": "Create images using nodes",
 	"author": "lsbt",
-	"version": "0.1",
+	"version": "0.2",
 	"supported_api_versions": [4],
 	"license": "MIT",
 	"nodes": [
